@@ -56,7 +56,7 @@ function displayUserTable(userData) {
   setDetailsCard(userData[0]);
   const tableRow = document.getElementsByTagName("tr");
   userData.forEach((element,index) => {
-        tableRow[index].addEventListener('click', function(event){
+        tableRow[index+1].addEventListener('click', function(event){
             const key = event.target.parentElement.attributes[0].nodeValue;
             setDetailsCard(userData[key]);
         })
