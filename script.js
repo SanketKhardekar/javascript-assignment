@@ -81,7 +81,12 @@ function setDetailsCard(obj) {
     document.getElementById('skill').innerHTML=obj.employment.key_skill;
     document.getElementById('address').innerHTML=obj.address.city+", "+obj.address.state+", "+obj.address.country; 
     document.getElementById('cc_no').innerHTML=obj.credit_card.cc_number;
-    document.getElementById('status').innerHTML=obj.subscription.status;   
+    document.getElementById('status').innerHTML=obj.subscription.status;  
+    if (document.documentElement.clientWidth <= 600) {
+      var elem = document.getElementById("user-content-container");
+      let elemPos = elem.getBoundingClientRect();
+      window.scrollTo(0, elemPos.top)
+  } 
 }
 function getGreetingText() {
   var today = new Date();
