@@ -90,12 +90,17 @@ img{
   box-shadow:  0 1.0em 8em white;
   object-fit: cover;
 }
+span{
+  color: black;
+  font-weight: lighter;
+}
 h3{
   padding-right: 0.5rem;
   font-size: medium;
+  color: brown;
   font-family: "cursive";
   text-decoration: none;
-  font-weight: normal;
+  font-weight:700;
 }
 .row-container{
   display: flex;
