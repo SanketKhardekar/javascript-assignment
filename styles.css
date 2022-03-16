@@ -16,7 +16,7 @@ body{
 }
 #user-table-container{
   background-color: #f3f3f3;
-  height: 39rem;
+  height:fit-content;
   padding: 10px;
   border-radius: 20px;
   overflow:auto;
@@ -67,7 +67,7 @@ table tr:hover {
 }
 #detailed-user-container{
   width: 55em;
-  height: 40em;
+  height: max-content;
   display: flex;
   flex-direction: row;
   overflow: auto;
@@ -96,8 +96,9 @@ table tr:hover {
   align-self: center;
 }
 img{
-  width: 7em;
-  height: 7em;
+  width: 8em;
+  margin: 15px;
+  height: 8em;
   border-radius: 50%;
   box-shadow:  0 1.0em 8em white;
   object-fit: cover;
@@ -118,6 +119,7 @@ h3{
   flex-direction:column;
   justify-content:flex-start;
   align-items:flex-start;
+  text-align: left;
 }
 @keyframes spin {
   0% {
@@ -154,5 +156,8 @@ h3{
   #user-image-container{
     flex-direction: row;
     width: 100%;
+  }
+  img{
+    margin-right: 15px;
   }
 }

@@ -69,7 +69,7 @@ function displayUserTable(userData) {
     let icon=document.createElement('i');
     icon.setAttribute('key',element.id);
     icon.setAttribute('class','material-icons');
-    icon.setAttribute('style','font-size:36px;color:red');
+    icon.setAttribute('style','font-size:30px;color:red');
     icon.innerHTML="delete";
     tableData.append(icon);
   });
@@ -163,4 +163,5 @@ function deleteItem(key){
   const updatedArray=globalUserData.filter((element)=> element.id!=key);
   globalUserData=updatedArray;
   displayUserTable(updatedArray);
+  alert("User Deleted Successfully :)");
 }
