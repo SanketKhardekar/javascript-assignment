@@ -99,6 +99,9 @@ function setDetailsCard(obj) {
     if(obj == null)
     {
       document.getElementById('detailed-user-container').style.display="none";
+      document.getElementById('user-table-container').style.display="none";
+      document.getElementById('main').style.justifyContent="center";
+      document.getElementById('data-not-found').style.display="block";
       return null;
     }
     const greetings=document.getElementById('greetings');

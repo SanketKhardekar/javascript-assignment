@@ -1,12 +1,12 @@
-body{
-  background-image: linear-gradient(100deg,#61A1DD,skyblue);
+body {
+  background-image: linear-gradient(100deg, #61a1dd, skyblue);
 }
 #main {
   padding: 3%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items:stretch;
+  justify-content: space-between;
+  align-items: center;
 }
 #loader-container {
   display: none;
@@ -14,22 +14,22 @@ body{
   justify-content: center;
   align-items: center;
 }
-#user-table-container{
+#user-table-container {
   background-color: #f3f3f3;
-  height:fit-content;
+  height: 35em;
   padding: 10px;
   border-radius: 20px;
-  overflow:auto;
+  overflow: auto;
   margin-right: 1%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 55em;
 }
-table{
+table {
   padding: 5px;
   table-layout: auto;
-  height:max-content;
-  width:100%;
+  height: max-content;
+  width: 100%;
   text-align: center;
   border-collapse: collapse;
   border-style: hidden;
@@ -49,7 +49,7 @@ table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-image: linear-gradient(70deg,#61A1DD,#0083FD);
+  background-image: linear-gradient(70deg, #61a1dd, #0083fd);
   color: white;
   letter-spacing: 1px;
 }
@@ -65,60 +65,61 @@ table tr:hover {
   height: 120px;
   animation: spin 0.5s linear infinite;
 }
-#detailed-user-container{
+#detailed-user-container {
   width: 55em;
-  height: max-content;
+  height: 36em;
   display: flex;
   flex-direction: row;
   overflow: auto;
   background-color: rgb(255, 255, 255);
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
   border-radius: 1em;
   text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1em;
 }
-#user-image-container{
-  width:max-content;
+#user-image-container {
+  width: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.5em 0;
-  background-image: linear-gradient(70deg,#61A1DD,#0083FD);
+  background-image: linear-gradient(70deg, #61a1dd, #0083fd);
 }
-#user-content-container{
+#user-content-container {
   color: #565656;
   padding: 1.5em;
   display: flex;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   align-self: center;
 }
-img{
+img {
   width: 8em;
   margin: 15px;
   height: 8em;
   border-radius: 50%;
-  box-shadow:  0 1.0em 8em white;
+  box-shadow: 0 1em 8em white;
   object-fit: cover;
 }
-span{
+span {
   color: black;
   font-weight: lighter;
 }
-h3{
+h3 {
   font-size: medium;
   color: brown;
   font-family: "cursive";
   text-decoration: none;
-  font-weight:700;
+  font-weight: 700;
 }
-.column-container{
+.column-container {
   display: flex;
-  flex-direction:column;
-  justify-content:flex-start;
-  align-items:flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   text-align: left;
 }
 @keyframes spin {
@@ -132,32 +133,48 @@ h3{
 #detailed-user-container::-webkit-scrollbar {
   width: 0.2em;
 }
- 
-#detailed-user-container::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0px #0047AB;
-}
 
+#detailed-user-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px #0047ab;
+}
+#not-found-text{
+  text-align: center;
+  vertical-align:middle;
+}
+#data-not-found {
+  display: none;
+  color: white;
+  font-style: oblique;
+  font-weight: bolder;
+  background-color: #f53b4a;
+  height: 10em;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  width: 30em;
+}
 @media screen and (max-width: 992px) {
-  #main{
+  #main {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #user-table-container{
+  #user-table-container {
     width: 100%;
     padding: 0px;
     margin: 0px;
   }
-  #detailed-user-container{
+  #detailed-user-container {
     flex-direction: column;
     margin-top: 50px;
-    width:100%;
+    width: 100%;
   }
-  #user-image-container{
+  #user-image-container {
     flex-direction: row;
     width: 100%;
   }
-  img{
+  img {
     margin-right: 15px;
   }
 }
